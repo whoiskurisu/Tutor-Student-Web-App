@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: border-box;
+  }
+
+.body{
+    align-content: center;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    gap: 150px;
+
+}
+
+.tutor{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-image: url("../images/scholarHat.jpg");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.student{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-image: url("../images/studentIcon.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+    cursor: pointer;
+}
