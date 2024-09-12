@@ -2,89 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AskMate - Welcome</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AskMate - Welcome</title>
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-      <div class="container">
-      <div class="tutor-container">
-        <div class="tutor-text">Tutor</div>
-        <div class="tutor"></div>
-      </div>
-      
-      <div class="or-text">or</div>
-
-      <div class="student-container">
-        <div class="student-text">Student</div>
-        <div class="student"></div>
-      </div>
+  <div class="container">
+    <div class="tutor-container">
+      <div class="tutor-text">Tutor</div>
+      <div class="tutor"></div>
     </div>
 
-    <!-- Simple scroll visual with AskMate logo -->
-    <div class="scroll-visual">
-        <h1 class="scroll-text">ASKMATE</h1>
-    </div>
+    <div class="or-text">or</div>
 
-    <!-- Interactive section to choose between Tutor or Student -->
-    <div class="header-title">
-        <h2>ASKMATE</h2>
+    <div class="student-container">
+      <div class="student-text">Student</div>
+      <div class="student"></div>
     </div>
+  </div>
 
-    <div class="container" id="chooseRole">
-        <div class="tutor" onclick="showLoginSignup('tutor')"></div>
-        <div class="student" onclick="showLoginSignup('student')"></div>
-    </div>
+  <!-- Simple scroll visual with AskMate logo -->
+  <div class="scroll-visual">
+    <h1 class="scroll-text">ASKMATE</h1>
+  </div>
 
-    <!-- Login/Signup Form -->
-    <div class="login-signup-modal" id="loginSignupModal">
-        <div class="form-container">
-            <h2 id="roleTitle">Sign up as a Tutor/Student</h2>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button onclick="loginUser()">Login / Sign up</button>
-            <p>Or sign up using:</p>
-            <button class="social-login" onclick="socialLogin('google')">Sign up with Google</button>
-            <button class="social-login" onclick="socialLogin('facebook')">Sign up with Facebook</button>
-        </div>
-    </div>
-  
+  <!-- Interactive section to choose between Tutor or Student -->
+  <div class="header-title">
+    <h2>ASKMATE</h2>
+  </div>
+
   <footer id="footer">
-      <div id="footer-content">
-        <a href="/help">Help</a>
-        <a href="/terms">Terms and Conditions</a>
-        <a href="/privacy">Privacy Policy</a>
-        <a href="/guidelines">Site guidelines</a>
-      </div>
-      <div id="icons">
-        <ion-icon name="logo-facebook"></ion-icon>
-        <ion-icon name="logo-instagram"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-      </div>
-      <div id="copyright">
-        © 2024 - Present, tutorstudents.com, Inc. or its affiliates
-      </div>
-    </footer>
+    <div id="footer-content">
+      <a href="/help">Help</a>
+      <a href="/terms">Terms and Conditions</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/guidelines">Site guidelines</a>
+    </div>
+    <div id="icons">
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+    </div>
+    <div id="copyright">
+      © 2024 - Present, tutorstudents.com, Inc. or its affiliates
+    </div>
+  </footer>
 
-    <!-- JavaScript -->
-    <script src="../js/script.js"></script>
+  <!-- JavaScript -->
+  <script src="../js/script.js"></script>
 
 </body>
 
-    <!-- Icons -->
-    <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  >
-  </script>
+<!-- Icons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+</script>
+
 </html>
