@@ -1,23 +1,46 @@
-<html>
-  <head>
-    <title>Tutor Student Web App</title>
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="en">
 
-  <body class="body">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskMate - Welcome</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
 
-    <div class="container">
-        <div class="tutor"></div>
-        <div class="student"></div>
+<body>
+
+    <!-- Simple scroll visual with AskMate logo -->
+    <div class="scroll-visual">
+        <h1 class="scroll-text">ASKMATE</h1>
     </div>
-    
-    
-       
-    <footer></footer>
-    
+
+    <!-- Interactive section to choose between Tutor or Student -->
+    <div class="header-title">
+        <h2>ASKMATE</h2>
+    </div>
+
+    <div class="container" id="chooseRole">
+        <div class="tutor" onclick="showLoginSignup('tutor')"></div>
+        <div class="student" onclick="showLoginSignup('student')"></div>
+    </div>
+
+    <!-- Login/Signup Form -->
+    <div class="login-signup-modal" id="loginSignupModal">
+        <div class="form-container">
+            <h2 id="roleTitle">Sign up as a Tutor/Student</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="loginUser()">Login / Sign up</button>
+            <p>Or sign up using:</p>
+            <button class="social-login" onclick="socialLogin('google')">Sign up with Google</button>
+            <button class="social-login" onclick="socialLogin('facebook')">Sign up with Facebook</button>
+        </div>
+    </div>
 
     <!-- JavaScript -->
-    <script src="../js/script.js" type="text/javascript"></script>
+    <script src="../js/script.js"></script>
 
-  </body>
+</body>
+
 </html>
